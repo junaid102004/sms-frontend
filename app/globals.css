@@ -1,0 +1,26 @@
+/* 1. MUST BE THE VERY FIRST LINE */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+/* 2. The @theme block (Kleon Purple Config) comes second */
+@theme {
+  --color-primary: #5D5FEF;  /* The Kleon Purple */
+  --color-secondary: #FFB0DD;
+  --color-background-page: #F4F7FE; /* Light Blue-ish Gray */
+  
+  --radius-3xl: 24px;
+  --radius-4xl: 32px;
+  
+  --shadow-soft: 0 20px 40px -10px rgba(93, 95, 239, 0.1); 
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+/* 3. @layer base comes last */
+@layer base {
+  body {
+    background-color: var(--color-background-page);
+    font-family: var(--font-sans);
+    color: #111827; /* Dark text for contrast */
+  }
+}
